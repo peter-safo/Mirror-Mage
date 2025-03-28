@@ -1,34 +1,22 @@
 fileFormatVersion: 2
-guid: f1bca27916968c544a1bf3d521273114
+guid: 82ccede395b172c458c42082826d25c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3001571849322693173
-    second: Skeleton_01_White_Attack2_0
+      213: 418060582191273543
+    second: Skeleton_01_White_Hurt_0
   - first:
-      213: -2195679947365462926
-    second: Skeleton_01_White_Attack2_1
+      213: 165141955181463246
+    second: Skeleton_01_White_Hurt_1
   - first:
-      213: -1077799021213408231
-    second: Skeleton_01_White_Attack2_2
+      213: 6421821576006471594
+    second: Skeleton_01_White_Hurt_2
   - first:
-      213: -9019330771954829285
-    second: Skeleton_01_White_Attack2_3
+      213: 2454245034970752087
+    second: Skeleton_01_White_Hurt_3
   - first:
-      213: 8250350366521837299
-    second: Skeleton_01_White_Attack2_4
-  - first:
-      213: 1103219444959790836
-    second: Skeleton_01_White_Attack2_5
-  - first:
-      213: 5786293737268754644
-    second: Skeleton_01_White_Attack2_6
-  - first:
-      213: 1762950799007343675
-    second: Skeleton_01_White_Attack2_7
-  - first:
-      213: 5091847479323694239
-    second: Skeleton_01_White_Attack2_8
+      213: 8356227401173498364
+    second: Skeleton_01_White_Hurt_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_0
+      name: Skeleton_01_White_Hurt_0
       rect:
         serializedVersion: 2
         x: 33
@@ -152,41 +140,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53201b6a1b9b7a920800000000000000
-      internalID: 3001571849322693173
+      spriteID: 7469a1072ef3dc500800000000000000
+      internalID: 418060582191273543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_1
+      name: Skeleton_01_White_Hurt_1
       rect:
         serializedVersion: 2
         x: 125
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27c45d898b06781e0800000000000000
-      internalID: -2195679947365462926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_2
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 0
-        width: 38
+        width: 29
         height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 914af492083ea01f0800000000000000
-      internalID: -1077799021213408231
+      spriteID: ec6ca18bbb3ba4200800000000000000
+      internalID: 165141955181463246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_3
+      name: Skeleton_01_White_Hurt_2
       rect:
         serializedVersion: 2
-        x: 315
+        x: 223
         y: 0
-        width: 38
-        height: 42
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,105 +184,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b18f1e90376e4d280800000000000000
-      internalID: -9019330771954829285
+      spriteID: aaf0ec8f2b4ee1950800000000000000
+      internalID: 6421821576006471594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_4
+      name: Skeleton_01_White_Hurt_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754a23d2bda3f0220800000000000000
+      internalID: 2454245034970752087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Hurt_4
       rect:
         serializedVersion: 2
         x: 417
-        y: 0
-        width: 63
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f64c0532f12f7270800000000000000
-      internalID: 8250350366521837299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_5
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 0
-        width: 63
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f6c1267d3c6f4f00800000000000000
-      internalID: 1103219444959790836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_6
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 0
-        width: 62
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d8b8f73f7b0d4050800000000000000
-      internalID: 5786293737268754644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_7
-      rect:
-        serializedVersion: 2
-        x: 707
-        y: 0
-        width: 47
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b34e2534962477810800000000000000
-      internalID: 1762950799007343675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeleton_01_White_Attack2_8
-      rect:
-        serializedVersion: 2
-        x: 801
         y: 0
         width: 36
         height: 47
@@ -328,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f949e8ffd40e9a640800000000000000
-      internalID: 5091847479323694239
+      spriteID: cf9f4555c8847f370800000000000000
+      internalID: 8356227401173498364
       vertices: []
       indices: 
       edges: []
@@ -347,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton_01_White_Hurt_0: 418060582191273543
+      Skeleton_01_White_Hurt_1: 165141955181463246
+      Skeleton_01_White_Hurt_2: 6421821576006471594
+      Skeleton_01_White_Hurt_3: 2454245034970752087
+      Skeleton_01_White_Hurt_4: 8356227401173498364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
