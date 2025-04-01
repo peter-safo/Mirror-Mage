@@ -7,11 +7,9 @@ public class TileHighlighter : MonoBehaviour
     public Tilemap highlightTilemap;
     public GameObject highlightTile;
 
-
     private Vector3Int previousCell;
     private GameObject currentHighlight;
     //private bool previousCellHighlighted;
-
 
     private void Update()
     {
@@ -21,8 +19,6 @@ public class TileHighlighter : MonoBehaviour
 
         // Convert to cell position
         Vector3Int cellPos = mainTilemap.WorldToCell(worldPos);
-
-       
 
         // Check if mouse is over a different cell
         if (cellPos != previousCell)
@@ -42,23 +38,12 @@ public class TileHighlighter : MonoBehaviour
 
                 // Instantiate highlight prefab
                 currentHighlight = Instantiate(highlightTile, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
-<<<<<<< HEAD
                 //previousCellHighlighted = true;
                 //Debug.Log("Highlighted");
-=======
-                previousCellHighlighted = true;
-                Debug.Log("Highlighted");
-
-
-
->>>>>>> alt-branch
             }
 
             previousCell = cellPos;
         }
-
-
-
     }
 
     private void OnDisable()

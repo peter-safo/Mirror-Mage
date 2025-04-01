@@ -64,12 +64,11 @@ public class LightRay : MonoBehaviour
             }
             else if (hitObject.layer == mirrorLayer && !hitObjects.Contains(hit.collider))
             {
-                hitObjects.Add(hit.collider); // Avoid hitting the same mirror twice in the same bounce
+                hitObjects.Add(hit.collider); // Avoid hitting the same mirror twice
 
                 // Reflection logic
                 Transform hitTransform = hit.collider.transform;
                 float angle = hitTransform.eulerAngles.z;
-                Vector2 mirrorCenter = hit.collider.bounds.center;
                 Debug.Log($"Bounce {bounceCount}: Hit Mirror {hit.collider.name} at {hit.point} with mirror angle {angle}");
 
                 Vector2 reflectedDirection;
@@ -117,8 +116,7 @@ public class LightRay : MonoBehaviour
                     reflectedDirection = Vector2.Reflect(direction, hit.normal).normalized;
                 }
 
-                float mirrorHalfSize = 0.5f;
-                Vector2 newOrigin = mirrorCenter + reflectedDirection * mirrorHalfSize; // Move to edge
+                Vector2 newOrigin = hit.point + reflectedDirection * 0.2f;
 
                 Debug.Log($"Bounce {bounceCount}: New ray from {newOrigin} in direction {reflectedDirection}");
 

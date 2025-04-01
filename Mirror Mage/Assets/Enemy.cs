@@ -19,5 +19,6 @@ public class Enemy : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
+        Debug.Log(health);
     }
 }
