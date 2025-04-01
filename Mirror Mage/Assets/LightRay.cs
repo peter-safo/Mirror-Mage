@@ -116,7 +116,12 @@ public class LightRay : MonoBehaviour
                     reflectedDirection = Vector2.Reflect(direction, hit.normal).normalized;
                 }
 
-                Vector2 newOrigin = hit.point + reflectedDirection * 0.2f;
+                // Get the exact center of the mirror tile
+                Vector2 mirrorCenter = hit.collider.bounds.center;
+
+                // Offset to the **edge** of the mirror (half of its 0.32 size)
+                float mirrorHalfSize = 0.5f;
+                Vector2 newOrigin = mirrorCenter + reflectedDirection * mirrorHalfSize; // Move to edge
 
                 Debug.Log($"Bounce {bounceCount}: New ray from {newOrigin} in direction {reflectedDirection}");
 

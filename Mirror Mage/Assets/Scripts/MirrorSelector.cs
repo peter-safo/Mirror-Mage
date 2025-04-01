@@ -1,26 +1,38 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class MirrorSelector : MonoBehaviour
 {
-    public LayerMask mirrorLayer; // Assign the "Mirror" layer in the Inspector
+    public Tilemap mainTilemap;
+    private bool Mirrorplaced;
+    public GameObject mirrorPrefab;
+    public LayerMask mirrorMask;
     private Transform selectedMirror;
-
+    // Update is called once per frame
     void Update()
     {
-        // Detect mouse click
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3Int cellPos = mainTilemap.WorldToCell(worldPos);
+
         if (Input.GetMouseButtonDown(0))
         {
-            Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D hitCollider = Physics2D.OverlapPoint(worldPos, mirrorLayer);
-
+            Collider2D hitCollider = Physics2D.OverlapPoint(worldPos);
             if (hitCollider != null)
             {
                 selectedMirror = hitCollider.transform; // Store the selected mirror
-                Debug.Log("Selected Mirror: " + selectedMirror.name);
-            }
-        }
 
-        // Rotate selected mirror
+                if (((1 << hitCollider.gameObject.layer) & mirrorMask) != 0)
+                {
+                    Debug.Log("Clicked on an object in the 'Mirror' layer.");
+                }
+            }
+            else
+            {
+                Vector3 cellCenterPos = mainTilemap.GetCellCenterWorld(cellPos);
+                Instantiate(mirrorPrefab, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
+            }
+
+        }
         if (selectedMirror != null)
         {
             if (Input.GetKeyDown(KeyCode.Q))
@@ -32,6 +44,7 @@ public class MirrorSelector : MonoBehaviour
                 RotateMirror(-90); // Rotate clockwise
             }
         }
+
     }
 
     void RotateMirror(int angle)
@@ -49,4 +62,5 @@ public class MirrorSelector : MonoBehaviour
 
         Debug.Log("New Rotation: " + selectedMirror.eulerAngles.z);
     }
+
 }
