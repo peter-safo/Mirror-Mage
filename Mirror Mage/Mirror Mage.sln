@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.csproj", "{830AAA9F-1E2E-0F27-F36F-CFF604B5DDFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.GPUDriven.Runtime", "Unity.RenderPipelines.GPUDriven.Runtime.csproj", "{4166EEA1-EDFC-5268-BBF3-656CB9F18AAF}"
@@ -225,12 +226,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Shade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.ShaderLibrary", "Unity.RenderPipelines.Core.ShaderLibrary.Player.csproj", "{DCD0BE45-D5B5-B9F9-855A-9142B0A7E359}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4D126340-673E-ED77-B72E-FF8E7190053B}"
+EndProject
+>>>>>>> alt-branch
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{830AAA9F-1E2E-0F27-F36F-CFF604B5DDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{830AAA9F-1E2E-0F27-F36F-CFF604B5DDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830AAA9F-1E2E-0F27-F36F-CFF604B5DDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -387,10 +393,13 @@ Global
 		{9DA948F2-64FA-0C69-5DD6-B78F477B3B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DA948F2-64FA-0C69-5DD6-B78F477B3B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DA948F2-64FA-0C69-5DD6-B78F477B3B03}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> alt-branch
 		{4D126340-673E-ED77-B72E-FF8E7190053B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D126340-673E-ED77-B72E-FF8E7190053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D126340-673E-ED77-B72E-FF8E7190053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D126340-673E-ED77-B72E-FF8E7190053B}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{1F6808BB-601C-9436-A42E-67BFBAD690D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F6808BB-601C-9436-A42E-67BFBAD690D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F6808BB-601C-9436-A42E-67BFBAD690D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -679,6 +688,8 @@ Global
 		{DCD0BE45-D5B5-B9F9-855A-9142B0A7E359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCD0BE45-D5B5-B9F9-855A-9142B0A7E359}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCD0BE45-D5B5-B9F9-855A-9142B0A7E359}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> alt-branch
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
