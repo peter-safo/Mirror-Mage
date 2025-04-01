@@ -448,10 +448,13 @@
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs"
 "Assets/Enemy.cs"
 "Assets/LightRay.cs"
+"Assets/ManaBar.cs"
 "Assets/Mirror.cs"
-"Assets/Scripts/GridManager.cs"
-"Assets/Scripts/Tile.cs"
+"Assets/Scripts/HealthBar.cs"
+"Assets/Scripts/Skeleton.cs"
 "Assets/Scripts/TileHighlighter.cs"
+"Assets/Scripts/TurnManager.cs"
+"Assets/Wizard.cs"
 -langversion:9.0
 /deterministic
 /optimize+

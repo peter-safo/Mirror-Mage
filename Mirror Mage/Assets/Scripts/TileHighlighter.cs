@@ -9,7 +9,7 @@ public class TileHighlighter : MonoBehaviour
 
     private Vector3Int previousCell;
     private GameObject currentHighlight;
-    private bool previousCellHighlighted;
+    //private bool previousCellHighlighted;
 
     private void Update()
     {
@@ -27,7 +27,7 @@ public class TileHighlighter : MonoBehaviour
             if (currentHighlight != null)
             {
                 Destroy(currentHighlight);
-                previousCellHighlighted = false;
+                //previousCellHighlighted = false;
             }
 
             // Check if new cell has a tile
@@ -38,8 +38,8 @@ public class TileHighlighter : MonoBehaviour
 
                 // Instantiate highlight prefab
                 currentHighlight = Instantiate(highlightTile, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
-                previousCellHighlighted = true;
-                Debug.Log("Highlighted");
+                //previousCellHighlighted = true;
+                //Debug.Log("Highlighted");
             }
 
             previousCell = cellPos;

@@ -61,16 +61,19 @@
     <Analyzer Include="C:\Users\peter\OneDrive\Documents\unity\6000.0.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Tile.cs" />
-    <Compile Include="Assets\Scripts\GridManager.cs" />
+    <Compile Include="Assets\ManaBar.cs" />
     <Compile Include="Assets\Scripts\TileHighlighter.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\Scripts\TurnManager.cs" />
     <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Skeleton.cs" />
+    <Compile Include="Assets\Wizard.cs" />
     <Compile Include="Assets\LightRay.cs" />
     <Compile Include="Assets\Mirror.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
