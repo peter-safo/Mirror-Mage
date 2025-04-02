@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -8,7 +9,17 @@ public class MirrorSelector : MonoBehaviour
     public GameObject mirrorPrefab;
     public LayerMask mirrorMask;
     private Transform selectedMirror;
+    private List<GameObject> mirrors = new List<GameObject>(); // List to store mirrors
     // Update is called once per frame
+
+    public void DeleteMirrors()
+    {
+        foreach (GameObject mirror in mirrors)
+        {
+            Destroy(mirror);
+        }
+        mirrors.Clear(); // Clear the list after deleting all mirrors
+    }
     void Update()
     {
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -29,7 +40,8 @@ public class MirrorSelector : MonoBehaviour
             else
             {
                 Vector3 cellCenterPos = mainTilemap.GetCellCenterWorld(cellPos);
-                Instantiate(mirrorPrefab, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
+                GameObject newMirror = Instantiate(mirrorPrefab, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
+                mirrors.Add(newMirror); // Add the new mirror to the list
             }
 
         }

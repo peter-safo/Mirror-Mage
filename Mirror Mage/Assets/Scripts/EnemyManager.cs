@@ -13,18 +13,18 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // Move all enemies when pressing Space
-        {
-            MoveEnemies();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space)) // Move all enemies when pressing Space
+        //{
+        //    MoveEnemies();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.E)) // Press "E" to spawn a new enemy
-        {
-            SpawnEnemy();
-        }
+        //if (Input.GetKeyDown(KeyCode.E)) // Press "E" to spawn a new enemy
+        //{
+        //    SpawnEnemy();
+        //}
     }
 
-    void MoveEnemies()
+    public void MoveEnemies()
     {
         foreach (GameObject enemy in enemies)
         {
@@ -48,7 +48,7 @@ public class EnemyManager : MonoBehaviour
         enemy.transform.position = targetPosition; // Ensure exact position
     }
 
-    void SpawnEnemy()
+    public void SpawnEnemy()
     {
         if (spawnPoints.Length == 0)
         {

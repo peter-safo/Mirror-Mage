@@ -9,15 +9,13 @@ public class TurnManager : MonoBehaviour
     public KeyCode endTurnKey = KeyCode.Space;
     public float enemyMoveDelay = 0.5f;
 
-    void Update()
+    public GameObject lightController;
+    public GameObject enemyController;
+    public GameObject mirrorController;
+
+    public void EndTurn()
     {
-        if (currentTurn == TurnState.PlayerTurn)
-        {
-            if (Input.GetKeyDown(endTurnKey))
-            {
-                EndPlayerTurn();
-            }
-        }
+        EndPlayerTurn();
     }
 
     void EndPlayerTurn()
@@ -29,12 +27,17 @@ public class TurnManager : MonoBehaviour
 
     void StartEnemyTurn()
     {
+        // fire light ray
+        lightController.GetComponent<LightRay>().ShootRay();
+
+        //delete mirrors
+
+        mirrorController.GetComponent<MirrorSelector>().DeleteMirrors();
+        //spawn more enemies
+        enemyController.GetComponent<EnemyManager>().SpawnEnemy();
+
         // Move all enemies
-        Skeleton[] enemies = FindObjectsOfType<Skeleton>();
-        foreach (Skeleton enemy in enemies)
-        {
-            enemy.MoveLeft();
-        }
+        enemyController.GetComponent<EnemyManager>().MoveEnemies();
 
         // Return to player turn
         Invoke("StartPlayerTurn", enemyMoveDelay);

@@ -1,38 +1,48 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using static UnityEngine.UI.Image;
 
 public class LightRay : MonoBehaviour
 {
     public float rayLength = 10f;
     public int maxBounces = 10; // Number of reflections allowed
+    HashSet<Collider2D> hitObjects = new HashSet<Collider2D>();
+    //void Start()
+    //{
+    //    StartCoroutine(ShootRaysRoutine()); // Start shooting rays in cycles
+    //}
 
-    void Start()
+    public void ShootRay()
     {
-        StartCoroutine(ShootRaysRoutine()); // Start shooting rays in cycles
+        CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
     }
 
-    IEnumerator ShootRaysRoutine()
-    {
-        while (true) // Infinite loop to keep repeating
-        {
-            float startTime = Time.time;
 
-            while (Time.time < startTime + 5f) // Shoot for 5 seconds
-            {
-                // Create a HashSet to track hit objects per cycle
-                HashSet<Collider2D> hitObjects = new HashSet<Collider2D>();
+    //IEnumerator ShootRaysRoutine()
+    //{
+    //    while (true) // Infinite loop to keep repeating
+    //    {
+    //        float startTime = Time.time;
 
-                CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
-                yield return new WaitForSeconds(0.2f); // Delay to control raycasting speed
-            }
+    //        while (Time.time < startTime + 5f) // Shoot for 5 seconds
+    //        {
+    //            // Create a HashSet to track hit objects per cycle
+                
 
-            yield return new WaitForSeconds(2f); // Wait 2 seconds before restarting
-        }
-    }
+    //            CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
+    //            yield return new WaitForSeconds(0.2f); // Delay to control raycasting speed
+    //        }
+
+    //        yield return new WaitForSeconds(2f); // Wait 2 seconds before restarting
+    //    }
+    //}
 
     void CastRay(Vector2 origin, Vector2 direction, int remainingBounces, int bounceCount, HashSet<Collider2D> hitObjects)
     {
+
+        Debug.Log("FIRING RAY");
+
         if (remainingBounces <= 0) return; // Stop if max bounces are reached
 
         int mirrorLayer = LayerMask.NameToLayer("Mirror"); // Mirror Layer
@@ -55,7 +65,7 @@ public class LightRay : MonoBehaviour
                 Enemy enemyScript = hit.transform.GetComponent<Enemy>();
                 if (enemyScript != null)
                 {
-                    enemyScript.health -= 1; // Deal damage
+                    enemyScript.health -= 50; // Deal damage
                 }
 
                 // Continue the ray by shifting origin slightly forward
