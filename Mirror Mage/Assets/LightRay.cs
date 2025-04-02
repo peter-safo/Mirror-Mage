@@ -41,7 +41,7 @@ public class LightRay : MonoBehaviour
     void CastRay(Vector2 origin, Vector2 direction, int remainingBounces, int bounceCount, HashSet<Collider2D> hitObjects)
     {
 
-        Debug.Log("FIRING RAY");
+        //Debug.Log("FIRING RAY");
 
         if (remainingBounces <= 0) return; // Stop if max bounces are reached
 
@@ -52,7 +52,7 @@ public class LightRay : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, 50f, layerMask);
 
         Debug.DrawRay(origin, direction * 50f, GetRayColor(bounceCount), 5f);
-        Debug.Log($"Bounce {bounceCount}: Casting ray from {origin} in direction {direction}");
+       // Debug.Log($"Bounce {bounceCount}: Casting ray from {origin} in direction {direction}");
 
         if (hit.collider != null)
         {
@@ -60,7 +60,7 @@ public class LightRay : MonoBehaviour
 
             if (hitObject.layer == enemyLayer)
             {
-                Debug.Log("skeleton is getting slapped");
+                //Debug.Log("skeleton is getting slapped");
 
                 Enemy enemyScript = hit.transform.GetComponent<Enemy>();
                 if (enemyScript != null)
@@ -79,7 +79,7 @@ public class LightRay : MonoBehaviour
                 // Reflection logic
                 Transform hitTransform = hit.collider.transform;
                 float angle = hitTransform.eulerAngles.z;
-                Debug.Log($"Bounce {bounceCount}: Hit Mirror {hit.collider.name} at {hit.point} with mirror angle {angle}");
+                //Debug.Log($"Bounce {bounceCount}: Hit Mirror {hit.collider.name} at {hit.point} with mirror angle {angle}");
 
                 Vector2 reflectedDirection;
 
@@ -133,18 +133,18 @@ public class LightRay : MonoBehaviour
                 float mirrorHalfSize = 0.5f;
                 Vector2 newOrigin = mirrorCenter + reflectedDirection * mirrorHalfSize; // Move to edge
 
-                Debug.Log($"Bounce {bounceCount}: New ray from {newOrigin} in direction {reflectedDirection}");
+                //Debug.Log($"Bounce {bounceCount}: New ray from {newOrigin} in direction {reflectedDirection}");
 
                 CastRay(newOrigin, reflectedDirection, remainingBounces - 1, bounceCount + 1, hitObjects);
             }
             else
             {
-                Debug.Log($"Bounce {bounceCount}: Hit an unrecognized object {hit.collider.name}");
+                //Debug.Log($"Bounce {bounceCount}: Hit an unrecognized object {hit.collider.name}");
             }
         }
         else
         {
-            Debug.Log($"Bounce {bounceCount}: No hit detected.");
+           // Debug.Log($"Bounce {bounceCount}: No hit detected.");
         }
     }
 

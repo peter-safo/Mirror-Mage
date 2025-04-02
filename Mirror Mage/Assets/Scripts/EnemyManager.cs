@@ -6,41 +6,47 @@ public class EnemyManager : MonoBehaviour
 {
     public GameObject enemyPrefab; // Assign an enemy prefab in the Inspector
     public Transform[] spawnPoints; // Array of multiple spawn points
-    public float moveDistance = 1f; // Distance to move
     public float moveSpeed = 5f; // Speed of movement
+    public LayerMask enemyLayer; // Layer for enemies to detect collisions
+    public float checkRadius = 0.5f; // Radius to check for other enemies
 
     private List<GameObject> enemies = new List<GameObject>(); // Dynamic list of enemies
+    private float[] possibleDistances = { 1f, 2f, 3f }; // Possible movement distances
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space)) // Move all enemies when pressing Space
-        //{
-        //    MoveEnemies();
-        //}
+        // Uncomment these if you want to trigger movement or spawning via key press
+        // if (Input.GetKeyDown(KeyCode.Space)) // Move all enemies when pressing Space
+        // {
+        //     MoveEnemies();
+        // }
 
-        //if (Input.GetKeyDown(KeyCode.E)) // Press "E" to spawn a new enemy
-        //{
-        //    SpawnEnemy();
-        //}
+        // if (Input.GetKeyDown(KeyCode.E)) // Press "E" to spawn a new enemy
+        // {
+        //     SpawnEnemy();
+        // }
     }
 
     public void MoveEnemies()
     {
         foreach (GameObject enemy in enemies)
         {
-            StartCoroutine(MoveEnemy(enemy, moveDistance));
+            float randomDistance = possibleDistances[Random.Range(0, possibleDistances.Length)]; // Choose a random distance
+            StartCoroutine(MoveEnemy(enemy, randomDistance));
         }
     }
 
-    System.Collections.IEnumerator MoveEnemy(GameObject enemy, float distance)
+    IEnumerator MoveEnemy(GameObject enemy, float distance)
     {
         Vector3 startPosition = enemy.transform.position;
         Vector3 targetPosition = startPosition + Vector3.left * distance; // Moving left
-        float elapsedTime = 0f;
 
-        while (elapsedTime < (distance / moveSpeed))
+        float elapsedTime = 0f;
+        float moveDuration = distance / moveSpeed; // Time needed to complete movement
+
+        while (elapsedTime < moveDuration)
         {
-            enemy.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / (distance / moveSpeed));
+            enemy.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / moveDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -56,8 +62,13 @@ public class EnemyManager : MonoBehaviour
             return;
         }
 
-        Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)]; // Pick a random spawn point
-        GameObject newEnemy = Instantiate(enemyPrefab, randomSpawnPoint.position, Quaternion.identity);
-        enemies.Add(newEnemy); // Add the new enemy to the list
+        int enemyCount = Random.Range(1, 4); // Randomly choose between 1 and 3 enemies to spawn
+
+        for (int i = 0; i < enemyCount; i++)
+        {
+            Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)]; // Pick a random spawn point
+            GameObject newEnemy = Instantiate(enemyPrefab, randomSpawnPoint.position, Quaternion.identity);
+            enemies.Add(newEnemy); // Add the new enemy to the list
+        }
     }
 }
