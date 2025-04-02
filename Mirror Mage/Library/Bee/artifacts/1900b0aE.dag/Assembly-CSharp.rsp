@@ -448,6 +448,7 @@
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs"
 "Assets/Enemy.cs"
 "Assets/LightRay.cs"
+"Assets/MainMenu.cs"
 "Assets/ManaBar.cs"
 "Assets/Mirror.cs"
 "Assets/Scripts/EnemyManager.cs"

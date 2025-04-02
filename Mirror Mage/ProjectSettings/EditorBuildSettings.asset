@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1e795138be28d304d8a106a38c17f946
+  - enabled: 1
+    path: Assets/Scenes/Dans Scene.unity
+    guid: 892bb7711197f1e488021878019726f4
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
