@@ -452,6 +452,7 @@
 "Assets/Mirror.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/HealthBar.cs"
+"Assets/Scripts/LightPlacer.cs"
 "Assets/Scripts/MirrorSelector.cs"
 "Assets/Scripts/Skeleton.cs"
 "Assets/Scripts/TileHighlighter.cs"

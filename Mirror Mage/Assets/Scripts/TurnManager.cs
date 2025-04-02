@@ -9,9 +9,11 @@ public class TurnManager : MonoBehaviour
     public KeyCode endTurnKey = KeyCode.Space;
     public float enemyMoveDelay = 0.5f;
 
-    public GameObject lightController;
     public GameObject enemyController;
     public GameObject mirrorController;
+
+    private LightRay lightRay;
+
 
     public void EndTurn()
     {
@@ -27,9 +29,17 @@ public class TurnManager : MonoBehaviour
 
     void StartEnemyTurn()
     {
+        if(lightRay == null)
+        {
+            lightRay = FindFirstObjectByType<LightRay>();
+        }
+        else
+        {
+            Debug.Log("cannot find light source");
+        }
         // fire light ray
-        lightController.GetComponent<LightRay>().ShootRay();
 
+        lightRay.GetComponent<LightRay>().ShootRay();
         //delete mirrors
 
         mirrorController.GetComponent<MirrorSelector>().DeleteMirrors();
