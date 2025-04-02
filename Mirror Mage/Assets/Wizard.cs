@@ -5,8 +5,8 @@ public class Wizard : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
-    public int maxMana = 100;
-    public int currentMana;
+    public float maxMana = 100f;
+    public float currentMana;
 
     public HealthBar healthBar;
     public ManaBar manaBar;
@@ -17,8 +17,8 @@ public class Wizard : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
-        currentMana = maxMana;
-        manaBar.SetMaxMana(maxMana);
+        //currentMana = maxMana;
+        //manaBar.SetMaxMana(maxMana);
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class Wizard : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SpendMana(20);
+            ManaBar.instance.SpendMana(20);
         }
     }
 
@@ -41,9 +41,9 @@ public class Wizard : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    void SpendMana(int mana)
-    {
-        currentMana -= mana;
-        manaBar.SetMana(currentMana);
-    }
+    //void SpendMana(float mana)
+    //{
+    //    currentMana -= mana;
+    //    manaBar.SetMana(currentMana);
+    //}
 }

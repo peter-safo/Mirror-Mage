@@ -62,8 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ManaBar.cs" />
+    <Compile Include="Assets\Scripts\MirrorSelector.cs" />
     <Compile Include="Assets\Scripts\TileHighlighter.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\TurnManager.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Scripts\Skeleton.cs" />

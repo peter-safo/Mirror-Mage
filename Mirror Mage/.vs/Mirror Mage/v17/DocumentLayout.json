@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\scripts\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\manabar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\manabar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\wizard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,12 +37,38 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 225,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManaBar.cs",
+              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ManaBar.cs",
+              "RelativeDocumentMoniker": "Assets\\ManaBar.cs",
+              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ManaBar.cs",
+              "RelativeToolTip": "Assets\\ManaBar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:05:51.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy.cs",
+              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T14:45:25.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Skeleton.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\Skeleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skeleton.cs",
@@ -46,12 +76,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Skeleton.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAAABAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:11:42.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:11:42.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TurnManager.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\TurnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TurnManager.cs",
@@ -59,12 +88,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TurnManager.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAgwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:58:37.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:58:37.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
@@ -72,43 +100,40 @@
               "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:38:49.164Z"
+              "WhenOpened": "2025-03-31T15:38:49.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Wizard.cs",
-              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Wizard.cs",
-              "RelativeDocumentMoniker": "Assets\\Wizard.cs",
-              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Wizard.cs",
-              "RelativeToolTip": "Assets\\Wizard.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:10:00.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManaBar.cs",
-              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ManaBar.cs",
-              "RelativeDocumentMoniker": "Assets\\ManaBar.cs",
-              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ManaBar.cs",
-              "RelativeToolTip": "Assets\\ManaBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:05:51.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TileHighlighter.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\TileHighlighter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TileHighlighter.cs",
               "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\TileHighlighter.cs",
               "RelativeToolTip": "Assets\\Scripts\\TileHighlighter.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBkAAAAnAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:32:38.534Z"
+              "WhenOpened": "2025-03-31T15:32:38.534Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 175,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Wizard.cs",
+              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Wizard.cs",
+              "RelativeDocumentMoniker": "Assets\\Wizard.cs",
+              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Wizard.cs",
+              "RelativeToolTip": "Assets\\Wizard.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:16:28.095Z",
+              "EditorCaption": ""
             }
           ]
         }
