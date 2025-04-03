@@ -447,6 +447,7 @@
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/PropsAltar.cs"
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/SpriteColorAnimation.cs"
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs"
+"Assets/ChangeScene.cs"
 "Assets/Enemy.cs"
 "Assets/LightRay.cs"
 "Assets/MainMenu.cs"
