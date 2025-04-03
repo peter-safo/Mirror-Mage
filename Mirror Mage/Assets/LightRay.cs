@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using static UnityEngine.UI.Image;
+using UnityEngine.UIElements;
 
 public class LightRay : MonoBehaviour
 {
@@ -53,7 +54,8 @@ public class LightRay : MonoBehaviour
 
         int mirrorLayer = LayerMask.NameToLayer("Mirror"); // Mirror Layer
         int enemyLayer = LayerMask.NameToLayer("Enemy");   // Enemy Layer
-        int layerMask = LayerMask.GetMask("Mirror", "Enemy", "Default"); // Add relevant layers
+        int borderLayer = LayerMask.NameToLayer("Border"); //  Border layer
+        int layerMask = LayerMask.GetMask("Border","Mirror", "Enemy", "Default"); // Add relevant layers
 
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, 50f, layerMask);
 
@@ -143,6 +145,10 @@ public class LightRay : MonoBehaviour
                 //rayPositions.Add(newOrigin); // Add new position to the ray path
                 rayPositions.Add(hitTransform.position); // Add new position to the ray path
                 CastRay(newOrigin, reflectedDirection, remainingBounces - 1, bounceCount + 1, hitObjects);
+            }
+            else if (hitObject.layer == borderLayer)
+            {
+                rayPositions.Add(hit.point); // Add new position to the ray path
             }
             else
             {
