@@ -2125,6 +2125,7 @@ MonoBehaviour:
   mirrorMask:
     serializedVersion: 2
     m_Bits: 128
+  manaBar: {fileID: 1841426440}
 --- !u!4 &798724981
 Transform:
   m_ObjectHideFlags: 0
@@ -6330,6 +6331,7 @@ MonoBehaviour:
   enemyMoveDelay: 0.5
   enemyController: {fileID: 1846249961}
   mirrorController: {fileID: 798724979}
+  manaBar: {fileID: 0}
 --- !u!4 &2069016094
 Transform:
   m_ObjectHideFlags: 0

@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dans Scene.unity
     guid: 892bb7711197f1e488021878019726f4
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 6004733b9e552554e8097e6ab1b09e5d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

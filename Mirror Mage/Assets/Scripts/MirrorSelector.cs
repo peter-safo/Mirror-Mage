@@ -10,6 +10,8 @@ public class MirrorSelector : MonoBehaviour
     public LayerMask mirrorMask;
     private Transform selectedMirror;
     private List<GameObject> mirrors = new List<GameObject>(); // List to store mirrors
+
+    public ManaBar manaBar;
     // Update is called once per frame
 
 
@@ -42,11 +44,12 @@ public class MirrorSelector : MonoBehaviour
                     Debug.Log("Clicked on an object in the 'Mirror' layer.");
                 }
             }
-            else
+            else if (ManaBar.instance.GetMana() >= 20)
             {
                 Vector3 cellCenterPos = mainTilemap.GetCellCenterWorld(cellPos);
                 GameObject newMirror = Instantiate(mirrorPrefab, cellCenterPos + new Vector3(0.0f, 0.0f, -3.0f), Quaternion.identity);
                 mirrors.Add(newMirror); // Add the new mirror to the list
+                ManaBar.instance.SpendMana(20);
             }
 
         }
@@ -59,6 +62,11 @@ public class MirrorSelector : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.E))
             {
                 RotateMirror(-90); // Rotate clockwise
+            }
+            else if (Input.GetKeyDown(KeyCode.R))
+            {
+                Destroy(selectedMirror.gameObject);
+                ManaBar.instance.AddMana();
             }
         }
 

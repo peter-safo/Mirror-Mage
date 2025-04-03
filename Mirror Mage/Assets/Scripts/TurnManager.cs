@@ -14,6 +14,8 @@ public class TurnManager : MonoBehaviour
 
     private LightRay lightRay;
 
+    public ManaBar manaBar;
+
     private void Start()
     {
         //spawn more enemies
@@ -76,5 +78,6 @@ public class TurnManager : MonoBehaviour
     {
         currentTurn = TurnState.PlayerTurn;
         Debug.Log("Player's turn");
+        ManaBar.instance.SetMaxMana();
     }
 }

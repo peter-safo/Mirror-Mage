@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using JetBrains.Annotations;
 
 public class ManaBar : MonoBehaviour
 {
@@ -33,17 +34,34 @@ public class ManaBar : MonoBehaviour
             currentMana -= amount;
             manaSlider.value = currentMana;
 
-            if (regen != null)
-            {
-                StopCoroutine(regen);
-            }
+            //if (regen != null)
+            //{
+            //    StopCoroutine(regen);
+            //}
 
-            regen = StartCoroutine(RegenMana());
+            //regen = StartCoroutine(RegenMana());
         }
         else
         {
             Debug.Log("Not enough mana");
         }
+    }
+
+    public void SetMaxMana()
+    {
+        currentMana = maxMana;
+        manaSlider.value = currentMana;
+    }
+
+    public int GetMana()
+    {
+       return currentMana;
+    }
+
+    public void AddMana()
+    {
+        currentMana += 20;
+        manaSlider.value = currentMana;
     }
 
     private IEnumerator RegenMana()

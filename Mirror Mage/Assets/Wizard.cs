@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Wizard : MonoBehaviour
 {
@@ -32,6 +33,11 @@ public class Wizard : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             ManaBar.instance.SpendMana(20);
+        }
+
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 
