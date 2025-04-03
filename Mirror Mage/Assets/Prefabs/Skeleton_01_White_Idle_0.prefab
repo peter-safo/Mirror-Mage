@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  _wizard: {fileID: 0}
 --- !u!61 &4330640799472811677
 BoxCollider2D:
   m_ObjectHideFlags: 0

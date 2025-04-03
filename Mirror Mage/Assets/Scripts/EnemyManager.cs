@@ -71,4 +71,13 @@ public class EnemyManager : MonoBehaviour
             enemies.Add(newEnemy); // Add the new enemy to the list
         }
     }
+    public void RemoveEnemy(GameObject enemy)
+    {
+        if (enemies.Contains(enemy))
+        {
+            enemies.Remove(enemy);
+            Debug.Log("Enemy removed from list.");
+        }
+    }
 }
+
