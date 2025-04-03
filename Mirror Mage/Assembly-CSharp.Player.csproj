@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\TurnManager.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Scripts\Skeleton.cs" />
+    <Compile Include="Assets\ButtonSound.cs" />
     <Compile Include="Assets\Wizard.cs" />
     <Compile Include="Assets\LightRay.cs" />
     <Compile Include="Assets\Mirror.cs" />

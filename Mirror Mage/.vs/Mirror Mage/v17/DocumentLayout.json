@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\lightray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\lightray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\lightray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,11 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 225,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ButtonSound.cs",
+              "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ButtonSound.cs",
+              "RelativeDocumentMoniker": "Assets\\ButtonSound.cs",
+              "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ButtonSound.cs",
+              "RelativeToolTip": "Assets\\ButtonSound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:23:13.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LightRay.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\LightRay.cs",
               "RelativeDocumentMoniker": "Assets\\LightRay.cs",
@@ -54,12 +71,11 @@
               "RelativeToolTip": "Assets\\LightRay.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:06:59.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T17:06:59.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\MainMenu.cs",
@@ -71,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ManaBar.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\ManaBar.cs",
               "RelativeDocumentMoniker": "Assets\\ManaBar.cs",
@@ -83,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy.cs",
@@ -95,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Skeleton.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\Skeleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skeleton.cs",
@@ -107,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TurnManager.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\TurnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TurnManager.cs",
@@ -120,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
@@ -132,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TileHighlighter.cs",
               "DocumentMoniker": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\Scripts\\TileHighlighter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TileHighlighter.cs",
