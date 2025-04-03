@@ -452,6 +452,7 @@
 "Assets/MainMenu.cs"
 "Assets/ManaBar.cs"
 "Assets/Mirror.cs"
+"Assets/PauseMenu.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/LightPlacer.cs"
