@@ -19,10 +19,26 @@ public class LightRay : MonoBehaviour
         CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
         UpdateLineRenderer();
     }
+    private void DestroySource()
+    {
+        Destroy(this.gameObject);
+    }
+    public void DeleteSourceInvoke()
+    {
+        Invoke(nameof(DestroySource), 1f);
+    }
+    public void ClearRay()
+    {
+        Invoke(nameof(DisableLineRenderer), 1f);
+    }
 
-
+    private void DisableLineRenderer()
+    {
+        _lineRenderer.enabled = false;
+    }
     void UpdateLineRenderer()
     {
+
         _lineRenderer.positionCount = rayPositions.Count; // Set the number of points in the line
         _lineRenderer.SetPositions(rayPositions.ToArray()); // Set the actual points for the line
         
@@ -32,7 +48,7 @@ public class LightRay : MonoBehaviour
     {
 
         //Debug.Log("FIRING RAY");
-
+        _lineRenderer.enabled = true;
         if (remainingBounces <= 0) return; // Stop if max bounces are reached
 
         int mirrorLayer = LayerMask.NameToLayer("Mirror"); // Mirror Layer
@@ -137,6 +153,7 @@ public class LightRay : MonoBehaviour
         {
             Vector3 endPoint = origin + direction * rayLength;
             rayPositions.Add(endPoint);
+            ClearRay();
         }
     }
 

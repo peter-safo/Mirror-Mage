@@ -14,7 +14,23 @@ public class TurnManager : MonoBehaviour
 
     private LightRay lightRay;
 
+    private void Start()
+    {
+        //spawn more enemies
+        enemyController.GetComponent<EnemyManager>().SpawnEnemy();
+        // Move all enemies
+        enemyController.GetComponent<EnemyManager>().MoveEnemies();
+        //spawn more enemies
+        enemyController.GetComponent<EnemyManager>().SpawnEnemy();
+        // Move all enemies
+        enemyController.GetComponent<EnemyManager>().MoveEnemies();
+        //spawn more enemies
+        enemyController.GetComponent<EnemyManager>().SpawnEnemy();
 
+        // Move all enemies
+        enemyController.GetComponent<EnemyManager>().MoveEnemies();
+        enemyController.GetComponent<EnemyManager>().MoveEnemies();
+    }
     public void EndTurn()
     {
         EndPlayerTurn();
@@ -42,13 +58,16 @@ public class TurnManager : MonoBehaviour
         lightRay.GetComponent<LightRay>().ShootRay();
         //delete mirrors
 
-        mirrorController.GetComponent<MirrorSelector>().DeleteMirrors();
+        mirrorController.GetComponent<MirrorSelector>().DestroyMirros();
         //spawn more enemies
+
+        lightRay.GetComponent<LightRay>().ClearRay();
+
         enemyController.GetComponent<EnemyManager>().SpawnEnemy();
 
         // Move all enemies
         enemyController.GetComponent<EnemyManager>().MoveEnemies();
-
+        lightRay.GetComponent <LightRay>().DeleteSourceInvoke();
         // Return to player turn
         Invoke("StartPlayerTurn", enemyMoveDelay);
     }

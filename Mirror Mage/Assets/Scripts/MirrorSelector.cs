@@ -12,7 +12,12 @@ public class MirrorSelector : MonoBehaviour
     private List<GameObject> mirrors = new List<GameObject>(); // List to store mirrors
     // Update is called once per frame
 
-    public void DeleteMirrors()
+
+    public void DestroyMirros()
+    {
+        Invoke(nameof(DeleteMirrors), 1f);
+    }
+    private void DeleteMirrors()
     {
         foreach (GameObject mirror in mirrors)
         {
