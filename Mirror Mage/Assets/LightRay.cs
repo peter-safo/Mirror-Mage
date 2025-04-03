@@ -8,35 +8,25 @@ public class LightRay : MonoBehaviour
     public float rayLength = 10f;
     public int maxBounces = 10; // Number of reflections allowed
     HashSet<Collider2D> hitObjects = new HashSet<Collider2D>();
-    //void Start()
-    //{
-    //    StartCoroutine(ShootRaysRoutine()); // Start shooting rays in cycles
-    //}
-
+    
+    public LineRenderer _lineRenderer;
+    // Create a list to store ray positions for LineRenderer
+    private List<Vector3> rayPositions = new List<Vector3>();
     public void ShootRay()
     {
+        // Start the ray with the current position
+        rayPositions.Add((Vector2)transform.position);
         CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
+        UpdateLineRenderer();
     }
 
 
-    //IEnumerator ShootRaysRoutine()
-    //{
-    //    while (true) // Infinite loop to keep repeating
-    //    {
-    //        float startTime = Time.time;
-
-    //        while (Time.time < startTime + 5f) // Shoot for 5 seconds
-    //        {
-    //            // Create a HashSet to track hit objects per cycle
-                
-
-    //            CastRay(transform.position, transform.right, maxBounces, 0, hitObjects);
-    //            yield return new WaitForSeconds(0.2f); // Delay to control raycasting speed
-    //        }
-
-    //        yield return new WaitForSeconds(2f); // Wait 2 seconds before restarting
-    //    }
-    //}
+    void UpdateLineRenderer()
+    {
+        _lineRenderer.positionCount = rayPositions.Count; // Set the number of points in the line
+        _lineRenderer.SetPositions(rayPositions.ToArray()); // Set the actual points for the line
+        
+    }
 
     void CastRay(Vector2 origin, Vector2 direction, int remainingBounces, int bounceCount, HashSet<Collider2D> hitObjects)
     {
@@ -134,7 +124,8 @@ public class LightRay : MonoBehaviour
                 Vector2 newOrigin = mirrorCenter + reflectedDirection * mirrorHalfSize; // Move to edge
 
                 //Debug.Log($"Bounce {bounceCount}: New ray from {newOrigin} in direction {reflectedDirection}");
-
+                //rayPositions.Add(newOrigin); // Add new position to the ray path
+                rayPositions.Add(hitTransform.position); // Add new position to the ray path
                 CastRay(newOrigin, reflectedDirection, remainingBounces - 1, bounceCount + 1, hitObjects);
             }
             else
@@ -144,7 +135,8 @@ public class LightRay : MonoBehaviour
         }
         else
         {
-           // Debug.Log($"Bounce {bounceCount}: No hit detected.");
+            Vector3 endPoint = origin + direction * rayLength;
+            rayPositions.Add(endPoint);
         }
     }
 
