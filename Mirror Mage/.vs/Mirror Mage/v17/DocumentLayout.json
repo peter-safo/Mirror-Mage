@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|d:\\gamejam\\mirror-mage\\mirror mage\\assets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|D:\\GameJam\\Mirror-Mage\\Mirror Mage\\assets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D126340-673E-ED77-B72E-FF8E7190053B}|Assembly-CSharp.csproj|solutionrelative:assets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Assets\\PauseMenu.cs",
               "ToolTip": "D:\\GameJam\\Mirror-Mage\\Mirror Mage\\Assets\\PauseMenu.cs",
               "RelativeToolTip": "Assets\\PauseMenu.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAA5wC8AAABAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA5wDQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T18:32:30.423Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Assets\\ButtonSound.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:23:13.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:23:13.858Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Assets\\MainMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T16:37:33.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T16:37:33.792Z"
             },
             {
               "$type": "Document",
